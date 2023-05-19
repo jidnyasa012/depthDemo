@@ -20,8 +20,7 @@
         <p>
           This sample demonstrates the use of a depth API in an immersive-ar session.
           The data will be accessed from a CPU.
-         
-          <button class="StartAR">Start AR<button>
+           
         </p>
       </details>
     </header>
@@ -68,7 +67,7 @@
           textXRNotFoundTitle: "AR NOT FOUND",
           textExitXRTitle: "EXIT AR",
         });
-        document.querySelector('button').appendChild(xrButton.domElement);
+        document.querySelector('header').appendChild(xrButton.domElement);
 
         if (navigator.xr) {
           navigator.xr.isSessionSupported('immersive-ar')
